@@ -202,6 +202,20 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:200;o
 @media (max-width:380px){
   .matrix thead th{font-size:8.5px}.matrix tbody td{font-size:10px;padding:7px 2px}
 }
+/* --- mobile fix: card slides fit the viewport (2-up + compact) --- */
+@media (max-width:600px){
+  .body-slide{padding:16px 16px 18px}
+  .body-slide h2{margin-bottom:12px}
+  .cards-3{grid-template-columns:1fr 1fr;gap:10px}
+  .card{padding:13px 13px;border-top-width:4px}
+  .card .num{font-size:34px;margin-bottom:5px;line-height:1}
+  .card .card-label{font-size:10.5px;letter-spacing:0.16em;margin-bottom:5px}
+  .card .card-desc{font-size:13px;line-height:1.28}
+  .body-slide .footnote{margin-top:12px;font-size:10.5px}
+}
+@media (max-width:380px){
+  .card{padding:11px 10px}.card .num{font-size:29px}.card .card-desc{font-size:12px}
+}
 </style></head>
 <body>
 <div class="deck">
