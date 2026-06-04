@@ -216,6 +216,44 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:200;o
 @media (max-width:380px){
   .card{padding:11px 10px}.card .num{font-size:29px}.card .card-desc{font-size:12px}
 }
+/* --- landscape phones (very short height): compress + use the width to fit --- */
+@media (orientation:landscape) and (max-height:520px){
+  .masthead{padding:4px 16px;font-size:10px}
+  .masthead .brand .b{font-size:15px}
+  .footer{padding:4px 16px}
+  .footer .nav-btn{min-height:34px;padding:5px 14px;font-size:16px}
+  .footer .counter{font-size:14px}
+  .side-nav{width:44px;height:44px;font-size:24px}
+  .spread{padding:12px 56px 14px}
+  .body-slide{padding:10px 30px 12px}
+  .folio{padding-bottom:5px;font-size:9.5px}
+  .body-slide .eyebrow{margin:5px 0 5px;font-size:9.5px}
+  .body-slide h2{font-size:clamp(19px,3.3vw,30px);line-height:1.02;margin-bottom:7px}
+  .body-slide .body-grid{grid-template-columns:1.3fr 1fr;gap:18px}
+  .body-slide .lede{font-size:14px;line-height:1.3;padding-left:12px;border-left-width:3px}
+  .body-slide .side{font-size:12.5px}
+  .body-slide .side .pull{font-size:14px;margin-bottom:7px;padding-bottom:7px}
+  .body-slide .footnote{margin-top:6px;font-size:9px}
+  .body-slide .audio-hint{display:none}
+  .cards-3{grid-template-columns:1fr 1fr 1fr;gap:8px}
+  .card{padding:8px 10px;border-top-width:3px}
+  .card .num{font-size:24px;margin-bottom:2px;line-height:1}
+  .card .card-label{font-size:9px;margin-bottom:3px;letter-spacing:0.12em}
+  .card .card-desc{font-size:11px;line-height:1.22}
+  .pipeline-flow{margin:4px 0 12px;gap:6px}
+  .pipe-node{padding:7px 12px;font-size:11px}
+  .qa-grid{gap:6px 24px}.qa-row{padding:7px 0}.qa-a{font-size:14px}
+  .matrix{font-size:11px}.matrix tbody td{padding:7px 10px}
+  .cover{padding-top:0}
+  .cover .eyebrow{margin-bottom:12px}
+  .cover h1{font-size:clamp(30px,5.6vw,52px);line-height:0.96;margin-bottom:10px}
+  .cover .sub{font-size:clamp(15px,2.3vw,22px)}
+  .cover .meta-row{margin-top:16px;gap:10px}
+  .close-slide{padding:14px 50px}
+  .close-slide .eyebrow{margin-bottom:14px}
+  .close-slide .manifesto{font-size:clamp(22px,3.6vw,34px);line-height:1.1}
+  .close-slide .tag{margin-top:16px}
+}
 </style></head>
 <body>
 <div class="deck">
