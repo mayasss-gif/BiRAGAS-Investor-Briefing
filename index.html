@@ -188,6 +188,20 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:200;o
   .pipe-node .pn-label{font-family:"DM Mono";font-size:12px;letter-spacing:0.14em;font-weight:700}
   .pipe-node.dossier .pn-date{color:var(--ink)}
 
+
+@media (max-width:600px){
+  .matrix-wrap{overflow:visible;border-left:1px solid var(--rule);border-right:1px solid var(--rule)}
+  .matrix{font-size:11px;table-layout:fixed;width:100%}
+  .matrix thead th{padding:6px 3px;letter-spacing:0.01em;white-space:normal;line-height:1.08;text-align:center;font-size:9.5px}
+  .matrix thead th:first-child{text-align:left;width:30%}
+  .matrix tbody td{padding:8px 3px;text-align:center;white-space:normal;word-break:break-word;line-height:1.15}
+  .matrix tbody td:first-child{text-align:left}
+  .matrix .m-id{font-size:11px;white-space:normal}
+  .matrix .m-evi{display:table-cell}
+}
+@media (max-width:380px){
+  .matrix thead th{font-size:8.5px}.matrix tbody td{font-size:10px;padding:7px 2px}
+}
 </style></head>
 <body>
 <div class="deck">
