@@ -523,6 +523,6 @@ playAllBtn.addEventListener('click',()=>{
 });
 // reflect when playback is stopped or finished
 audioBtn.addEventListener('click',()=>{if(!audioOn){playAllBtn.classList.remove('on');playAllBtn.textContent='▷ PLAY FROM START';}});
-player.addEventListener('ended',()=>{if(cur===N-1){playAllBtn.classList.remove('on');playAllBtn.textContent='▷ PLAY FROM START';}});
+player.addEventListener('ended',()=>{setTimeout(()=>{if(cur===N-1&&player.paused){playAllBtn.classList.remove('on');playAllBtn.textContent='▷ PLAY FROM START';}},150);});
 </script>
 </body></html>
